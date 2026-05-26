@@ -1,0 +1,9 @@
+name = "math-scanner-api"
+main = "src/index.ts"
+compatibility_date = "2025-05-01"
+account_id = "355b2133ab38442ded57c4e4e36607fa"
+
+# Public env var. Override per environment if needed.
+# GEMINI_API_KEY is set as a secret via `wrangler secret put GEMINI_API_KEY`.
+[vars]
+ALLOWED_ORIGINS = "https://math-scanner.pages.dev,http://localhost:5173"
