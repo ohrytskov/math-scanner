@@ -5,6 +5,17 @@
 
 * { box-sizing: border-box; }
 
+.hero-decor {
+  display: flex;
+  justify-content: center;
+  margin: 56px auto 0;
+  color: #111;
+}
+
+@media (prefers-color-scheme: dark) {
+  .hero-decor { color: #e7e7e9; }
+}
+
 body {
   margin: 0;
   padding: 0;

@@ -99,6 +99,65 @@ export function App() {
             accept="image/*"
             onChange={onPick}
           />
+
+          <div className="hero-decor" aria-hidden="true">
+            <svg width="220" height="130" viewBox="0 0 220 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {/* Faint notebook ruling lines for paper feel */}
+              <line x1="6" y1="30" x2="214" y2="30" stroke="currentColor" strokeWidth="0.5" opacity="0.22" />
+              <line x1="6" y1="65" x2="214" y2="65" stroke="currentColor" strokeWidth="0.5" opacity="0.22" />
+              <line x1="6" y1="100" x2="214" y2="100" stroke="currentColor" strokeWidth="0.5" opacity="0.22" />
+
+              {/* Center: Pythagorean theorem, the iconic one — slight tilt */}
+              <g transform="rotate(-2 110 60)">
+                <text x="110" y="60"
+                      fontFamily="'Times New Roman', Georgia, serif"
+                      fontStyle="italic"
+                      fontWeight="700"
+                      fontSize="26"
+                      fill="currentColor"
+                      textAnchor="middle">a² + b² = c²</text>
+              </g>
+
+              {/* Top-left: quadratic discriminant fragment */}
+              <g transform="rotate(-8 42 22)">
+                <text x="42" y="22"
+                      fontFamily="'Times New Roman', Georgia, serif"
+                      fontStyle="italic"
+                      fontWeight="700"
+                      fontSize="14"
+                      fill="currentColor"
+                      textAnchor="middle"
+                      >b² − 4ac</text>
+              </g>
+
+              {/* Top-right: pi */}
+              <text x="198" y="22"
+                    fontFamily="'Times New Roman', Georgia, serif"
+                    fontStyle="italic"
+                    fontWeight="700"
+                    fontSize="24"
+                    fill="currentColor"
+                    >π</text>
+
+              {/* Bottom-left: integral */}
+              <text x="14" y="118"
+                    fontFamily="'Times New Roman', Georgia, serif"
+                    fontStyle="italic"
+                    fontWeight="700"
+                    fontSize="22"
+                    fill="currentColor"
+                    >∫ f(x) dx</text>
+
+              {/* Bottom-right: derivative */}
+              <text x="148" y="118"
+                    fontFamily="'Times New Roman', Georgia, serif"
+                    fontStyle="italic"
+                    fontWeight="700"
+                    fontSize="20"
+                    fill="currentColor"
+                    >dy/dx</text>
+            </svg>
+          </div>
         </div>
       )}
 
