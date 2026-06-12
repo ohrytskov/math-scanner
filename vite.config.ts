@@ -9,4 +9,9 @@ export default defineConfig({
     emptyOutDir: true,
     sourcemap: true,
   },
+  server: {
+    // Allow access through ad-hoc cloudflared quick tunnels during dev review.
+    // Vite 5 blocks unknown Host headers by default; this loosens it.
+    allowedHosts: ['.trycloudflare.com'],
+  },
 });
